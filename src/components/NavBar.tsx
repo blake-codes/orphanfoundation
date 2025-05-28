@@ -117,12 +117,19 @@ const NavBar = styled.nav<NavProps>`
 `;
 const LogoContainer = styled(Link)`
   display: flex;
-  align-items: flex-start;
-  margin: 20px 0;
+  align-items: center;
+  margin: 0;
   margin-right: 20px;
   text-decoration: none;
   color: inherit;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  @media (max-width: 600px) {
+    max-width: 70%;
+  }
 `;
+
 
 const Logo = styled.div`
   img {
@@ -136,18 +143,30 @@ const LogoText = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  font-family: "Poppins", sans-serif; /* Modern and stylish font */
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #e53935;
   font-size: 1.2rem;
   letter-spacing: 1px;
+  white-space: nowrap; /* prevents multi-line stretching */
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   span {
     font-size: 1rem;
     font-weight: 500;
     color: #333333;
   }
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+
+    span {
+      font-size: 0.85rem;
+    }
+  }
 `;
+
 
 const SignUpContainer = styled.div`
   background-color: #e53935;
