@@ -282,7 +282,9 @@ const ChatBot: React.FC = () => {
       socket.current = io("https://orphan-server.onrender.com");
       socket.current.on(
         "receiveMessage",
-        (data: { id: string; message: string; isUser: boolean }) => {
+        (data: { id: string; message: string; isUser: boolean,sessionId: string; }) => {
+          
+           if (data.sessionId !== localStorage.getItem("sessionId")) return;
           setMessages((prev) => {
             if (prev.some((msg) => msg.id === data.id)) return prev;
               if (!isOpen && !data.isUser) {
@@ -405,6 +407,7 @@ const ChatBot: React.FC = () => {
             })
             .then((response) => {
               localStorage.setItem("sessionId", response.data.sessionId);
+              console.log("Chat session started:", response.data);
               setSessionId(response.data.sessionId);
               const newMessage = {
                 message: userInput,
