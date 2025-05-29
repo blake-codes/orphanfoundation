@@ -94,7 +94,7 @@ const Projects = () => {
         <Section>
           <Title>Our Projects</Title>
           <Paragraph>
-            At Orphan Life Foundation, we create sustainable impact through a
+            At Stars of hope Charity Foundation, we create sustainable impact through a
             variety of targeted programs around the world. Explore some of our
             featured projects below.
           </Paragraph>
@@ -144,13 +144,13 @@ const Projects = () => {
             alt="Child receiving medical care"
           />
           <Paragraph>
-            In May 2016, one of Orphan Life Foundation’s members visited a
+            In May 2016, one of Stars of hope Charity Foundation’s members visited a
             school in the village of Didyr, Burkina Faso which we had been
             helping by contributing to the improvement of the orphan education
             environment present there. During the tour of the school, a child
             called him a “SAINT”. He asked as to why the little girl said that.
             She stated that she had been using the same pencil that had been
-            given to her 2 years ago as part of Orphan Life Foundation’s
+            given to her 2 years ago as part of Stars of hope Charity Foundation’s
             efforts.
           </Paragraph>
           <CTAButton to="/donate">Support This Project</CTAButton>

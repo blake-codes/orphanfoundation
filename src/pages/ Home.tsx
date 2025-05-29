@@ -248,7 +248,7 @@ const Home = () => {
       <ImpactSection>
         <h2>Every Day, 734 Children Become Orphans</h2>
         <p>
-          Orphan Life Foundation is a global non-profit committed to the
+         Stars of hope Charity Foundation is a global non-profit committed to the
           well-being of orphans and abandoned children. We provide access to
           health and educational opportunities, safe housing, and adoption
           services.
